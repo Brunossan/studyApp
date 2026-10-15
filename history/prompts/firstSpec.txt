@@ -1,0 +1,78 @@
+Atuando como um professor especialista em  aprendizado rápido, neuroeducação e métodos de estudo em provas, gere a especificação de uma aplicação para estudantes, com o objetivo de ajudar na resolução de questões e saneamento de dúvidas. 
+Considere o seguinte contexto: possibilidade de cadastrar questões e suas respostas respostas esperadas e aplicação de IA para ajuda com resolução. O conteúdo deve ter o formato markdown. Evite entrar na parte técnica neste momento.
+
+Resposta gemini 
+
+Especificação de Produto: Plataforma de Aprendizagem Ativa e Resolução Guiada
+Visão Geral do Produto
+A plataforma é um ambiente de estudo focado na prática de recuperação (active recall) e no erro produtivo. Em vez de entregar respostas prontas, o aplicativo atua como um facilitador cognitivo. O objetivo não é apenas que o aluno acerte a questão, mas que ele consolide o caminho neural necessário para resolver problemas semelhantes sob a pressão de uma prova.
+
+1. Princípios de Neuroeducação Aplicados
+Para que a ferramenta seja verdadeiramente eficaz na retenção de longo prazo, ela deve ser construída sobre pilares cientificamente validados:
+
+Prática de Recuperação (Active Recall): O esforço de buscar a resposta na memória fortalece as sinapses. O aplicativo deve forçar a tentativa antes de qualquer ajuda.
+
+Andaime Cognitivo (Scaffolding): A IA não deve dar a resposta imediatamente. Ela deve oferecer suporte gradual (dicas) apenas na exata medida da dificuldade do aluno, retirando esse suporte conforme ele ganha autonomia.
+
+Efeito de Geração: Alunos lembram melhor de informações que eles mesmos geraram do que daquelas que apenas leram.
+
+Metacognição: Fazer o aluno refletir sobre o como ele pensou e o nível de certeza que tinha ao responder, calibrando sua autopercepção de aprendizado.
+
+2. Funcionalidades Principais (Visão de Produto)
+2.1. Módulo de Cadastro de Conhecimento (A "Base")
+Permite que o estudante ou professores alimentem o sistema com o material de estudo.
+
+Entrada da Questão: Texto base, enunciado e alternativas (se múltipla escolha) ou espaço para resposta dissertativa.
+
+Gabarito Esperado: A resposta final correta.
+
+Critérios de Êxito (Rubrica): Para questões dissertativas, quais são as palavras-chave ou raciocínios que precisam constar na resposta para ela ser considerada correta.
+
+Classificação: Tags de disciplina, assunto e nível percebido de dificuldade.
+
+2.2. O Ciclo de Resolução (A "Arena de Teste")
+O ambiente onde o estudante tenta resolver a questão. Deve ser livre de distrações e focado no esforço cognitivo.
+
+Tentativa Obrigatória: O botão de "Ver Resposta" ou "Pedir Ajuda à IA" só é habilitado após o aluno registrar uma tentativa (seja digitando algo ou selecionando uma opção), forçando o active recall.
+
+Medidor de Confiança: Antes de enviar a resposta, o aluno marca o quão confiante está (ex: "Chutei", "Em dúvida", "Tenho Certeza"). Isso cruza com o resultado real para treinar a metacognição.
+
+2.3. IA como Tutor Socrático (O "Coração" do App)
+Quando o aluno erra ou tem dúvida, a Inteligência Artificial entra em cena, atuando estritamente sob o método Socrático.
+
+Análise de Lacunas: A IA compara a tentativa do aluno com a "Resposta Esperada" cadastrada e identifica exatamente onde o raciocínio quebrou (ex: "Ele lembrou a fórmula, mas errou a conversão de unidades").
+
+Dicas em Camadas (Progressive Hinting):
+
+Nível 1 (Provocação Leve): Uma pergunta que faz o aluno repensar. ("Você notou qual é a unidade de medida exigida no final do enunciado?")
+
+Nível 2 (Conceitual): Relembra a teoria base. ("Lembre-se que, neste caso, o princípio ativo reage apenas em ambiente ácido.")
+
+Nível 3 (Guiada): Passo a passo até a resposta, usado apenas como último recurso.
+
+Debriefing de Acertos ao Acaso: Se o aluno acertou, mas marcou que "Chutou" no medidor de confiança, a IA pede para ele explicar rapidamente o porquê daquela resposta antes de validar o aprendizado.
+
+2.4. Saneamento de Dúvidas Direcionado
+Se o aluno empacar completamente na questão:
+
+Chat Contextualizado: O aluno pode perguntar: "Por que a alternativa B está errada?". A IA, ciente da questão e do gabarito, explica especificamente o distrator daquela alternativa, sem dar uma aula desnecessária sobre o assunto inteiro.
+
+3. Jornada do Usuário (O Fluxo de Estudo)
+Alimentação: O aluno insere as questões que errou em um simulado ou provas anteriores que precisa dominar.
+
+Desafio: O aplicativo apresenta a questão. O aluno lê, pensa e elabora sua resposta. Ele indica seu nível de confiança e submete.
+
+Avaliação Imediata: O sistema avalia a resposta contra o gabarito.
+
+Intervenção (Se necessário):
+
+Acertou com certeza: Recebe um reforço positivo rápido e a questão é concluída.
+
+Acertou sem certeza: A IA faz uma pergunta de verificação rápida.
+
+Errou: O sistema bloqueia a resposta correta e a IA envia a Dica Nível 1. O aluno tenta de novo.
+
+Consolidação: Após chegar à resposta correta (com ou sem ajuda da IA), o sistema gera um micro-resumo de 1 linha ("A lição principal desta questão é...") para fixação.
+
+4. Próximos Passos Sugeridos
+Uma vez validado este modelo conceitual e pedagógico, o próximo passo seria refinar a arquitetura de prompts da IA (para garantir que ela nunca quebre o personagem Socrático "dando" a resposta) e desenhar as interfaces de usuário focadas em baixo atrito cognitivo.
